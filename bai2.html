@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 2</title>
+</head>
+
+<body>
+    <form id="form">
+        <table>
+            <tr>
+                <td>Họ tên:</td>
+                <td><input type="text" name="" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="" id="email"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Hiển thị thông tin"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        var obj_form = document.getElementById('form');
+        obj_form.addEventListener('submit', function() {
+            console.log('Đã chạy vào sự kiện submit');
+            var obj_name = document.getElementById('name');
+            var name = obj_name.value;
+            var obj_email = document.getElementById('email');
+            var email = obj_email.value;
+            var result = "Name: " + name + " Mail: " + email;
+            alert("Tên vừa nhập: " + name + '\n' + "email vừa nhập: " + email);
+
+            event.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
