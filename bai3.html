@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 3</title>
+    <link rel="stylesheet" href="css/style-bai-3.css">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="box-main">
+        <div class="box-title">
+            <h4>
+                JavaScript Onsubmit Event Example
+            </h4>
+        </div>
+        <div class="box-body">
+            <form id="form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control cus-input" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control cus-input" id="email" placeholder="Enter email">
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Contact No:</label>
+                    <input type="number" class="form-control cus-input" id="number" placeholder="Enter number">
+                </div>
+                <button type="submit" class="btn btn-submit">Submit</button>
+                <p id="p-class"></p>
+            </form>
+            <script>
+                var obj_form = document.getElementById('form');
+                obj_form.addEventListener('submit', function() {
+
+                    var obj_name = document.getElementById('name');
+                    var name = obj_name.value;
+                    var obj_email = document.getElementById('email');
+                    var email = obj_email.value;
+                    var obj_number = document.getElementById('number');
+                    var number = obj_number.value;
+                    var result = "Name: " + name + "<br>" + " Email: " + email + "<br>" + "Contact No: " + number;
+
+                    var obj_text = document.getElementById('p-class');
+                    obj_text.innerHTML = result;
+
+
+                    event.preventDefault();
+                });
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>

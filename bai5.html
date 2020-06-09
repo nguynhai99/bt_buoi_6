@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+</head>
+<style>
+    .btn-danger {
+        border: 0px solid transparent;
+    }
+</style>
+
+<body>
+    <button class="btn btn-danger ">button 1</button>
+    <button class="btn btn-danger " style="" id="btn-hover">button 2</button>
+    <button class="btn btn-danger ">button 3</button>
+</body>
+<script>
+    var obj_btn = document.getElementById('btn-hover');
+    obj_btn.addEventListener('mouseenter', function() {
+        obj_btn.style = 'background-color:blue;'
+    })
+
+    obj_btn.addEventListener('mouseout', function() {
+        obj_btn.style = 'background-color:#DC3545;'
+    })
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+.box-main {
+    border: 1px solid #F1EFEF;
+    width: 435px;
+    height: 500px;
+}
+
+.box-title {
+    text-align: center;
+    border-bottom: 1px solid #F1EFEF;
+    background-color: #FEFFED;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-left: 30px;
+}
+
+.form-group:nth-child(1) {
+    margin-top: 20px;
+}
+
+.cus-input {
+    width: 365px !important;
+}
+
+.btn-submit {
+    width: 365px;
+    margin-left: 30px;
+    background-color: #FFD662;
+    font-weight: bold !important;
+}
+
+#p-class {
+    margin-left: 30px;
+}
