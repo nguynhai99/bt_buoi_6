@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        nhập <input type="text" id="name">
+
+    </form>
+    <script>
+        var obj_form = document.getElementById('form');
+        obj_form.addEventListener('submit', function() {
+
+            var obj_name = document.getElementById('name');
+            var name = obj_name.value;
+            alert("Chuỗi của bạn đang nhập là:" + name);
+
+
+            event.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
