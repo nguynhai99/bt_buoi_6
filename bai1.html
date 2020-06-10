@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="form">
+      <h1>Form Information</h1>
+      <table>
+        <tr>
+          <td>Họ tên:</td>
+          <td><input type="text" id="name" /></td>
+        </tr>
+        <tr>
+          <td>Tuổi:</td>
+          <td><input type="number" id="age" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Hiển thị thông tin" /></td>
+        </tr>
+      </table>
+    </form>
+    <span style="font-weight: bold;" id="result1"></span><br />
+    <span style="font-weight: bold;" id="result2"></span>
+    <script type="text/javascript">
+      var obj_form = document.getElementById("form");
+      var obj_name = document.getElementById("name");
+      obj_form.addEventListener("submit", function () {
+        var name = obj_name.value;
+        var obj_age = document.getElementById("age");
+        var age = obj_age.value;
+        var result1 = "Tên vừa nhập:" + name;
+        var result2 = "Tuổi vừa nhập:" + age;
+
+        var obj_result1 = document.getElementById("result1");
+        obj_result1.innerHTML=result1;
+        var obj_result2 = document.getElementById("result2");
+        obj_result2.innerHTML = result2;
+
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>
